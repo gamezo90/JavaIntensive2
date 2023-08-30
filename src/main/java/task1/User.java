@@ -1,6 +1,9 @@
 package task1;
 
-public class User {
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class User  {
 
     int id;
 
@@ -57,5 +60,20 @@ public class User {
                 ", sourName='" + sourName + '\'' +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public ArrayList<User> creatUser(int id, int age, String sourName,String name){
+        ArrayList<User> users = new ArrayList<>();
+        User user = new User(1,22,"Prigozhin","Eugene");
+        users.add(user);
+        User user1 = new User(2,23,"WADHd","wadwad");
+        users.add(user1);
+        User user2 = new User(3,55,"wadawd","wadawd");
+        users.add(user2);
+        User user3 = new User(4, 56,"wdad","wadawd");
+        users.add(user3);
+        User user4 = new User(5,66,"wadd","wadawd");
+        users.add(user4);
+        return users;
     }
 }
