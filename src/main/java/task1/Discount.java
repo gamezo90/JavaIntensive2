@@ -8,7 +8,7 @@ public class Discount {
 
     float size;
 
-    public Discount(int i, float v) {
+    public Discount(int userId, float size) {
     }
 
     public int getUserId() {
