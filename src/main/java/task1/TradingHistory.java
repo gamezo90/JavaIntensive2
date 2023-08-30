@@ -11,13 +11,20 @@ public class TradingHistory {
         ArrayList<User> users = User.createSomeUsers();
         ArrayList<Discount> discounts = Discount.createSomeDiscounts();
 
-        Buying buying1 = new Buying(users.get(0), computers.get(0), discounts.get(0));
-        Buying buying2 = new Buying(users.get(0), computers.get(1), buying1.calculeteDiscount(buying1.discount));
+
+        Buying buying1 = new Buying(users.get(1), computers.get(0), discounts.get(0));
+        discounts.add(users.get(1).getId(), buying1.calculeteDiscount(discounts.get(0)));
+
+
+        Buying buying2 = new Buying(users.get(2), computers.get(1), discounts.get(1));
+        discounts.add(users.get(2).getId(), buying2.calculeteDiscount(discounts.get(1)));
+
+    //    Buying buying2 = new Buying(users.get(0), computers.get(1), buying1.calculeteDiscount(buying1.discount));
       //  buying1.calculeteDiscount(buying1.discount);
 
 
 
-        System.out.println(buying2);
+        System.out.println(discounts);
     }
     public static  ArrayList addDeal(Buying buying, Selling selling) {
 
