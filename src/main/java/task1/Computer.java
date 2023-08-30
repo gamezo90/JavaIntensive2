@@ -12,6 +12,13 @@ public class Computer {
 
     BigDecimal price;
 
+    public Computer(int id, String manufacturer, String model, BigDecimal price){
+        this.id = id;
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.price = price;
+    }
+
     public int getId() {
         return id;
     }
