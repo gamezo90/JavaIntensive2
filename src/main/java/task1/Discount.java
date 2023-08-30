@@ -4,23 +4,23 @@ import java.util.ArrayList;
 
 public class Discount {
 
-    int id;
+    int userId;
 
     float size;
 
     public Discount(int i, float v) {
     }
 
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
     public float getSize() {
         return size;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int id) {
+        this.userId = userId;
     }
 
     public void setSize(float size) {
@@ -38,7 +38,7 @@ public class Discount {
     @Override
     public String toString() {
         return "Discount{" +
-                "id=" + id +
+                "userId=" + userId +
                 ", size=" + size +
                 '}';
     }
