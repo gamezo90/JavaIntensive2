@@ -65,15 +65,15 @@ public class User  {
     public static ArrayList createSomeUsers() {
 
         ArrayList<User> users = new ArrayList<>();
-        User user = new User(1,22,"Prigozhin","Eugene");
+        User user = new User(0,22,"Prigozhin","Eugene");
         users.add(user);
-        User user1 = new User(2,23,"WADHd","wadwad");
+        User user1 = new User(1,23,"WADHd","wadwad");
         users.add(user1);
-        User user2 = new User(3,55,"wadawd","wadawd");
+        User user2 = new User(2,55,"wadawd","wadawd");
         users.add(user2);
-        User user3 = new User(4, 56,"wdad","wadawd");
+        User user3 = new User(3, 56,"wdad","wadawd");
         users.add(user3);
-        User user4 = new User(5,66,"wadd","wadawd");
+        User user4 = new User(4,66,"wadd","wadawd");
         users.add(user4);
         return users;
     }

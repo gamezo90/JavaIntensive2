@@ -1,5 +1,7 @@
 package task1;
 
+import java.util.ArrayList;
+
 public class Discount {
 
     int id;
@@ -23,6 +25,14 @@ public class Discount {
 
     public void setSize(float size) {
         this.size = size;
+    }
+
+    public static ArrayList createSomeDiscounts() {
+
+        ArrayList<Discount> discounts = new ArrayList<>();
+        Discount discount = new Discount(0, 0f);
+        discounts.add(discount);
+        return discounts;
     }
 
     @Override

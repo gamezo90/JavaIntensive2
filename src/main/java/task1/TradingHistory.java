@@ -6,10 +6,12 @@ import java.util.Arrays;
 
 public class TradingHistory {
     public static void main(String[] args) {
-        Computer.createSomeComputers();
-        User.createSomeUsers();
+        ArrayList<Computer> computers = Computer.createSomeComputers();
+        ArrayList<User> users = User.createSomeUsers();
+        ArrayList<Discount> discounts = Discount.createSomeDiscounts();
+        Buying buying1 = new Buying(users.get(0), computers.get(0), discounts.get(0));
 
-
+        System.out.println(buying1);
     }
     public static  ArrayList addDeal(Buying buying, Selling selling) {
 

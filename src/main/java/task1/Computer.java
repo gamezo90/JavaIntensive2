@@ -56,15 +56,15 @@ public class Computer {
     public static ArrayList createSomeComputers() {
 
         ArrayList<Computer> computers = new ArrayList<>();
-        Computer comp1 = new Computer(1, "Asus", "Rog", BigDecimal.valueOf(800));
+        Computer comp1 = new Computer(0, "Asus", "Rog", BigDecimal.valueOf(800));
         computers.add(comp1);
-        Computer comp2 = new Computer(2, "Acer", "Aspire", BigDecimal.valueOf(600));
+        Computer comp2 = new Computer(1, "Acer", "Aspire", BigDecimal.valueOf(600));
         computers.add(comp2);
-        Computer comp3 = new Computer(3, "Dell", "AlienWare", BigDecimal.valueOf(2000));
+        Computer comp3 = new Computer(2, "Dell", "AlienWare", BigDecimal.valueOf(2000));
         computers.add(comp3);
-        Computer comp4 = new Computer(4, "Hp", "Pavilion", BigDecimal.valueOf(1000));
+        Computer comp4 = new Computer(3, "Hp", "Pavilion", BigDecimal.valueOf(1000));
         computers.add(comp4);
-        Computer comp5 = new Computer(5, "Lenovo", "Ideadpad", BigDecimal.valueOf(1200));
+        Computer comp5 = new Computer(4, "Lenovo", "Ideadpad", BigDecimal.valueOf(1200));
         computers.add(comp5);
         return computers;
     }
