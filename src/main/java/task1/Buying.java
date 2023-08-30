@@ -8,6 +8,7 @@ public class Buying extends Trading {
         this.discount =discount;
     }
 
+
     public Discount  calculeteDiscount (Discount discount) {
         if (discount.getSize() == 0) {
             discount.setSize(5f);

@@ -19,7 +19,7 @@ public class Discount {
         return size;
     }
 
-    public void setUserId(int id) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
