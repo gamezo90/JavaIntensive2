@@ -62,7 +62,8 @@ public class User  {
                 '}';
     }
 
-    public ArrayList<User> creatUser(int id, int age, String sourName,String name){
+    public static ArrayList createSomeUsers() {
+
         ArrayList<User> users = new ArrayList<>();
         User user = new User(1,22,"Prigozhin","Eugene");
         users.add(user);
